@@ -1,0 +1,12 @@
+4-BIT RIPPLE-CARRY ADDER - VERIFICATION RESULTS
+===============================================
+Test space: A=0..15 (16), B=0..15 (16), Cin=0..1 (2)
+Total combinations: 16 x 16 x 2 = 512
+
+Method: compare {Cout, Sum} with A + B + Cin for every input.
+Any mismatch triggers $fatal; PASS appears only after all tests complete.
+
+Verified online in TutorialsPoint Verilog compiler:
+  PASS: All 512 combinations verified!
+
+Run locally to generate four_bit_adder.vcd and reproduce the test.
