@@ -1,0 +1,23 @@
+TRAFFIC LIGHT CONTROLLER - TESTBENCH CHECKLIST
+============================================
+
+Testbench design:
+  GREEN_CYCLES  = 3
+  YELLOW_CYCLES = 2
+  RED_CYCLES    = 3
+
+Checks:
+  [x] Reset selects GREEN
+  [x] GREEN -> YELLOW transition
+  [x] YELLOW -> RED transition
+  [x] RED -> GREEN transition
+  [x] Sequence repeated twice
+  [x] Exactly one lamp output asserted at sampled states
+  [x] VCD waveform generation enabled
+
+Expected simulator completion:
+  PASS: sequence GREEN -> YELLOW -> RED -> GREEN verified.
+  PASS: one-hot output checks completed (... checks).
+  Waveform: traffic_light_controller.vcd
+
+Run the testbench locally to obtain the exact check count and generated waveform.
